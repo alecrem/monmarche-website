@@ -1,55 +1,63 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+import { Text, Center, Heading, Stack } from '@chakra-ui/react'
 
-import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
+import { ShopCard } from '../components/ShopCard'
+
+const mapurls = [
+  'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6663.268923921602!2d130.575274!3d33.380608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a1c1b254611b%3A0x76be69e99415fd75!2smon%20March%C3%A9!5e0!3m2!1sen!2sjp!4v1688461027721!5m2!1sen!2sjp',
+  'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6786.329189221611!2d131.083361!3d31.738707999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353f2659dbebffff%3A0x4b709954aeaa2bab!2sSLF!5e0!3m2!1sen!2sjp!4v1688461156562!5m2!1sen!2sjp',
+]
 
 const Index = () => (
-  <Container height="100vh">
-    <Hero />
-    <Main>
-      <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>TypeScript</Code>.
-      </Text>
-
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
+  <Container height={'100vh'}>
+    <Main mt={'5vh'}>
+      <Center>
+        <Heading fontSize={['10vw', '8vw', '6vw']} size={'xl'}>
+          mon Marché
+        </Heading>
+      </Center>
+      <Center>
+        <Text color="text" align="center" maxWidth="32rem">
+          フランスを主に、ヨーロッパの古道具を販売。
+          商品は、ヨーロッパに直接仕入れに行って、 ひとつひとつ選んでおります。
+          ぜひご覧ください。自然派ワインも置いております。
+          大切につくられたワインで素敵時間をお過ごしください…{' '}
+        </Text>
+      </Center>
+      <Center mt={20}>
+        <Stack spacing={'100px'} direction={['column', 'row']}>
+          <ShopCard
+            title={'mon Marché'}
+            address={'838-0124 福岡県小郡市古飯489-1'}
+            openingHours={'水曜日 11:00-16:00'}
+            phone={'090-2078-7809'}
+            email={'info@mmfukuoka.com'}
+            facebook={'monmarchefukuoka'}
+            instagram={'_monmarche'}
+            mapurl={mapurls[0]}
+          />
+          <ShopCard
+            title={'mon Marché SLF店'}
+            address={'885-0015 宮崎県都城市千町5000 (SLF)'}
+            phone={'090-2078-7809'}
+            email={'info@mmfukuoka.com'}
+            facebook={'monmarchefukuoka'}
+            instagram={'_monmarche'}
+            mapurl={mapurls[1]}
+          />
+        </Stack>
+      </Center>
     </Main>
 
-    <DarkModeSwitch />
     <Footer>
-      <Text>Next ❤️ Chakra</Text>
+      <Text align={'center'}>
+        Copyright © 2022 - {new Date().getFullYear()} mon Marché
+        <br />
+        ヨーロッパの古道具屋さんと自然派ワイン
+      </Text>
     </Footer>
-    <CTA />
   </Container>
 )
 
