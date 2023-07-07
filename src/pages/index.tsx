@@ -53,7 +53,7 @@ const Index = () => (
 
     <Footer>
       <Text align={'center'}>
-        Copyright © 2022 - {new Date().getFullYear()} mon Marché
+        Copyright © 2018 - {new Date().getFullYear()} mon Marché
         <br />
         ヨーロッパの古道具屋さんと自然派ワイン
       </Text>
