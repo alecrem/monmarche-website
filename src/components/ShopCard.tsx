@@ -1,10 +1,12 @@
 import {
   Link as ChakraLink,
+  Button,
   Heading,
   Text,
   Box,
   AspectRatio,
 } from '@chakra-ui/react'
+import { FaInstagram, FaEnvelope, FaPhone, FaMap } from 'react-icons/fa'
 
 export const ShopCard = ({
   title,
@@ -25,27 +27,59 @@ export const ShopCard = ({
 }) => (
   <Box minWidth={'30vh'}>
     <Heading size={'lg'}>{title}</Heading>
-    <Text>
-      <b>Add:</b> {address}
-    </Text>
     {openingHours && (
-      <Text>
+      <Text mt={2}>
         <b>Open:</b> {openingHours}
       </Text>
     )}
-    <Text>
-      <b>Tel:</b> {phone}
+    <Text mt={2}>
+      <Button
+        as={ChakraLink}
+        variant={'outline'}
+        size={'sm'}
+        href={`https://www.google.co.jp/maps?hl=ja&q=${address}`}
+      >
+        <FaMap />
+      </Button>{' '}
+      {address}
     </Text>
-    <Text>
-      <b>email:</b> {email}
+    <Text mt={2}>
+      <Button
+        as={ChakraLink}
+        variant={'outline'}
+        size={'sm'}
+        href={`tel:${phone}`}
+      >
+        <FaPhone />
+        &nbsp;
+        {phone}
+      </Button>
     </Text>
-    <Text>
-      <b>Instagram:</b>{' '}
-      <ChakraLink href={`https://www.instagram.com/${instagram}`}>
+    <Text mt={2}>
+      <Button
+        as={ChakraLink}
+        variant={'outline'}
+        size={'sm'}
+        href={`mailto:${email}`}
+      >
+        <FaEnvelope />
+        &nbsp;
+        {email}
+      </Button>
+    </Text>
+    <Text mt={2}>
+      <Button
+        as={ChakraLink}
+        variant={'outline'}
+        size={'sm'}
+        href={`https://www.instagram.com/${instagram}`}
+      >
+        <FaInstagram />
+        &nbsp;
         {instagram}
-      </ChakraLink>
+      </Button>
     </Text>
-    <AspectRatio ratio={4 / 3}>
+    <AspectRatio ratio={4 / 3} mt={2}>
       <iframe src={mapurl} width="400" height="300" loading="lazy"></iframe>
     </AspectRatio>
   </Box>
