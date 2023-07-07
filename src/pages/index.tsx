@@ -34,7 +34,6 @@ const Index = () => (
             openingHours={'水曜日 11:00-16:00'}
             phone={'090-2078-7809'}
             email={'info@mmfukuoka.com'}
-            facebook={'monmarchefukuoka'}
             instagram={'_monmarche'}
             mapurl={mapurls[0]}
           />
@@ -43,7 +42,6 @@ const Index = () => (
             address={'885-0015 宮崎県都城市千町5000 (SLF)'}
             phone={'090-2078-7809'}
             email={'info@mmfukuoka.com'}
-            facebook={'monmarchefukuoka'}
             instagram={'_monmarche'}
             mapurl={mapurls[1]}
           />
