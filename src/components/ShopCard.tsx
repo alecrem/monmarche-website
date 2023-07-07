@@ -12,7 +12,6 @@ export const ShopCard = ({
   openingHours,
   phone,
   email,
-  facebook,
   instagram,
   mapurl,
 }: {
@@ -21,7 +20,6 @@ export const ShopCard = ({
   openingHours?: string
   phone: string
   email: string
-  facebook: string
   instagram: string
   mapurl: string
 }) => (
@@ -42,12 +40,6 @@ export const ShopCard = ({
       <b>email:</b> {email}
     </Text>
     <Text>
-      <b>Facebook:</b>{' '}
-      <ChakraLink href={`https://www.facebook.com/${facebook}`}>
-        {facebook}
-      </ChakraLink>
-    </Text>
-    <Text>
       <b>Instagram:</b>{' '}
       <ChakraLink href={`https://www.instagram.com/${instagram}`}>
         {instagram}
@@ -64,7 +56,6 @@ ShopCard.defaultProps = {
   address: 'Shop Address',
   phone: '000-0000-0000',
   email: 'email@yourshop.com',
-  facebook: 'facebook_url_slug',
   instagram: 'instagram_user',
   mapurl:
     'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6663.268923921602!2d130.575274!3d33.380608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a1c1b254611b%3A0x76be69e99415fd75!2smon%20March%C3%A9!5e0!3m2!1sen!2sjp!4v1688461027721!5m2!1sen!2sjp',
