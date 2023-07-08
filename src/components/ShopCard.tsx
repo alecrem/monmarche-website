@@ -1,10 +1,11 @@
 import {
   Link as ChakraLink,
   Button,
-  Heading,
   Text,
   Box,
   AspectRatio,
+  Flex,
+  useColorModeValue,
 } from '@chakra-ui/react'
 import { FaInstagram, FaEnvelope, FaPhone, FaMap } from 'react-icons/fa'
 
@@ -24,66 +25,92 @@ export const ShopCard = ({
   email: string
   instagram: string
   mapurl: string
-}) => (
-  <Box minWidth={'30vh'}>
-    <Heading size={'lg'}>{title}</Heading>
-    {openingHours && (
-      <Text mt={2}>
-        <b>Open:</b> {openingHours}
-      </Text>
-    )}
-    <Text mt={2}>
-      <Button
-        as={ChakraLink}
-        variant={'outline'}
-        size={'sm'}
-        href={`https://www.google.co.jp/maps?hl=ja&q=${address}`}
+}) => {
+  return (
+    <Flex p={4} w={'full'}>
+      <Box
+        bg={useColorModeValue('white', 'gray.800')}
+        maxW={'sm'}
+        minW={'sm'}
+        borderWidth={'1px'}
+        rounded={'lg'}
+        shadow={'lg'}
+        position={'relative'}
       >
-        <FaMap />
-      </Button>{' '}
-      {address}
-    </Text>
-    <Text mt={2}>
-      <Button
-        as={ChakraLink}
-        variant={'outline'}
-        size={'sm'}
-        href={`tel:${phone}`}
-      >
-        <FaPhone />
-        &nbsp;
-        {phone}
-      </Button>
-    </Text>
-    <Text mt={2}>
-      <Button
-        as={ChakraLink}
-        variant={'outline'}
-        size={'sm'}
-        href={`mailto:${email}`}
-      >
-        <FaEnvelope />
-        &nbsp;
-        {email}
-      </Button>
-    </Text>
-    <Text mt={2}>
-      <Button
-        as={ChakraLink}
-        variant={'outline'}
-        size={'sm'}
-        href={`https://www.instagram.com/${instagram}`}
-      >
-        <FaInstagram />
-        &nbsp;
-        {instagram}
-      </Button>
-    </Text>
-    <AspectRatio ratio={4 / 3} mt={2}>
-      <iframe src={mapurl} width="400" height="300" loading="lazy"></iframe>
-    </AspectRatio>
-  </Box>
-)
+        <AspectRatio ratio={1} roundedTop={'lg'}>
+          <iframe src={mapurl} loading={'lazy'}></iframe>
+        </AspectRatio>
+
+        <Box p={6}>
+          <Flex mt={1} justifyContent={'space-between'} alignContent={'center'}>
+            <Box
+              fontSize={'2xl'}
+              fontWeight={'semibold'}
+              as={'h4'}
+              lineHeight={'tight'}
+              isTruncated
+            >
+              {title}
+            </Box>
+          </Flex>
+
+          {openingHours && (
+            <Text mt={2}>
+              <b>Open:</b> {openingHours}
+            </Text>
+          )}
+          <Text mt={2} fontSize={'80%'}>
+            <Button
+              as={ChakraLink}
+              variant={'outline'}
+              size={'sm'}
+              href={`https://www.google.co.jp/maps?hl=ja&q=${address}`}
+            >
+              <FaMap />
+            </Button>{' '}
+            {address}
+          </Text>
+          <Text mt={2}>
+            <Button
+              as={ChakraLink}
+              variant={'outline'}
+              size={'sm'}
+              href={`tel:${phone}`}
+            >
+              <FaPhone />
+              &nbsp;
+              {phone}
+            </Button>
+          </Text>
+          <Text mt={2}>
+            <Button
+              as={ChakraLink}
+              variant={'outline'}
+              size={'sm'}
+              href={`mailto:${email}`}
+            >
+              <FaEnvelope />
+              &nbsp;
+              {email}
+            </Button>
+          </Text>
+          <Text mt={2}>
+            <Button
+              as={ChakraLink}
+              variant={'outline'}
+              size={'sm'}
+              href={`https://www.instagram.com/${instagram}`}
+            >
+              <FaInstagram />
+              &nbsp;
+              {instagram}
+            </Button>
+          </Text>
+        </Box>
+      </Box>
+    </Flex>
+  )
+}
 
 ShopCard.defaultProps = {
   title: 'Shop Name',
