@@ -27,7 +27,12 @@ const Index = () => (
         </Text>
       </Center>
       <Center mt={20}>
-        <Stack spacing={'100px'} direction={['column', 'row']}>
+        <Stack
+          spacing={4}
+          direction={['column', 'column', 'row']}
+          display={'flex'}
+          alignItems={'flex-start'}
+        >
           <ShopCard
             title={'mon Marché'}
             address={'838-0124 福岡県小郡市古飯489-1'}
