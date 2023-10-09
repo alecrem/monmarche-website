@@ -67,6 +67,7 @@ const Index = () => (
             <ShopCard
               title={'mon Marché SLF店'}
               address={'885-0015 宮崎県都城市千町5000 (SLF)'}
+              openingHours={'第2第3土曜日 13:00-15:00'}
               phone={'090-2078-7809'}
               email={'info@mmfukuoka.com'}
               instagram={'_monmarche'}
