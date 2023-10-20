@@ -24,7 +24,12 @@ const Index = () => (
       <Main mt={'5vh'}>
         <Center>
           <Heading>
-            <Image src={'/monmarche-logo-white.png'} alt={'mon Marché'} />
+            <Image
+              src={'/monmarche-logo-2023.png'}
+              filter={'invert(1)'}
+              maxW={'300px'}
+              alt={'mon Marché'}
+            />
           </Heading>
         </Center>
         <Center>
