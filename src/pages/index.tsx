@@ -26,7 +26,7 @@ const Index = () => (
           <Heading>
             <Image
               src={'/monmarche-logo-2023.png'}
-              filter={'invert(1)'}
+              filter={'invert(1) drop-shadow(0px 0px 1px black);'}
               maxW={'300px'}
               alt={'mon Marché'}
             />
