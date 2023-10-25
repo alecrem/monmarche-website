@@ -84,6 +84,14 @@ const Index = () => (
 
       <Footer>
         <Text align={'center'}>
+          <Center>
+            <Image
+              src={'/monmarche-logo-2023.png'}
+              alt={'mon Marché'}
+              maxW="160px"
+            />
+          </Center>
+          <br />
           Copyright © 2018 - {new Date().getFullYear()} mon Marché
           <br />
           ヨーロッパの古道具屋さんと自然派ワイン
