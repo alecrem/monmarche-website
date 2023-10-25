@@ -1,4 +1,4 @@
-import { Text, Center, Heading, Stack, Image, Box } from '@chakra-ui/react'
+import { Text, Center, Heading, Stack, Image } from '@chakra-ui/react'
 
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
@@ -9,24 +9,14 @@ const mapIframeUrls = [
   'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6663.268923921602!2d130.575274!3d33.380608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a1c1b254611b%3A0x76be69e99415fd75!2smon%20March%C3%A9!5e0!3m2!1sen!2sjp!4v1688461027721!5m2!1sen!2sjp',
   'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6786.329189221611!2d131.083361!3d31.738707999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353f2659dbebffff%3A0x4b709954aeaa2bab!2sSLF!5e0!3m2!1sen!2sjp!4v1688461156562!5m2!1sen!2sjp',
 ]
-const textOutlineStyle = {
-  textShadow:
-    '-1px -1px 0 #0007, 1px -1px 0 #0007, -1px 1px 0 #0007, 1px 1px 0 #0007',
-}
-
 const Index = () => (
   <>
-    <Container
-      bgImage={'/monmarche-bg.jpg'}
-      bgPosition={'center'}
-      minW={'100%'}
-    >
+    <Container minW={'60%'}>
       <Main mt={'5vh'}>
         <Center>
           <Heading>
             <Image
               src={'/monmarche-logo-2023.png'}
-              filter={'invert(1) drop-shadow(0px 0px 1px black);'}
               maxW={'300px'}
               alt={'mon Marché'}
             />
@@ -36,11 +26,9 @@ const Index = () => (
           <Text
             fontWeight={'black'}
             fontSize={'lg'}
-            color="white"
-            align="center"
-            maxWidth="32rem"
-            pb={['4em', '6em', '8em']}
-            style={textOutlineStyle}
+            align={'center'}
+            maxWidth={'32rem'}
+            pb={'3em'}
           >
             フランスを主に、ヨーロッパの古道具を販売。
             商品は、ヨーロッパに直接仕入れに行って、
