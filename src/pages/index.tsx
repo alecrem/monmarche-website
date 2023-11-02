@@ -75,7 +75,7 @@ const Index = () => (
       </Main>
 
       <Footer>
-        <Text align={'center'}>
+        <Stack direction={'column'}>
           <Center>
             <Image
               src={'/monmarche-logo-2023.png'}
@@ -83,11 +83,15 @@ const Index = () => (
               maxW="160px"
             />
           </Center>
-          <br />
-          Copyright © 2018 - {new Date().getFullYear()} mon Marché
-          <br />
-          ヨーロッパの古道具屋さんと自然派ワイン
-        </Text>
+          <Center>
+            <Text align={'center'}>
+              <br />
+              Copyright © 2018 - {new Date().getFullYear()} mon Marché
+              <br />
+              ヨーロッパの古道具屋さんと自然派ワイン
+            </Text>
+          </Center>
+        </Stack>
       </Footer>
     </Container>
   </>
