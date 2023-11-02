@@ -1,25 +1,25 @@
-import { Stack, StackProps, Box, AspectRatio } from '@chakra-ui/react'
+import { SimpleGrid, StackProps, Box, AspectRatio } from '@chakra-ui/react'
 
 export const PhotoGrid = (props: StackProps) => (
   <>
-    <Stack
+    <SimpleGrid
+      minW={['100%', '90%', '80%']}
+      columns={[null, 2, 2]}
+      px={[0, 4]}
       spacing={4}
-      direction={['column', 'column', 'row']}
-      display={'flex'}
-      alignItems={'flex-start'}
     >
-      <AspectRatio ratio={1} minW={'360px'} minH={'360px'}>
-        <Box bgColor={'red'}></Box>
+      <AspectRatio ratio={1}>
+        <Box bgColor={'grey'}></Box>
       </AspectRatio>
-      <AspectRatio ratio={1} minW={'360px'} minH={'360px'}>
-        <Box bgColor={'blue'}></Box>
+      <AspectRatio ratio={1}>
+        <Box bgColor={'grey'}></Box>
       </AspectRatio>
-      <AspectRatio ratio={1} minW={'360px'} minH={'360px'}>
-        <Box bgColor={'yellow'}></Box>
+      <AspectRatio ratio={1}>
+        <Box bgColor={'grey'}></Box>
       </AspectRatio>
-      <AspectRatio ratio={1} minW={'360px'} minH={'360px'}>
-        <Box bgColor={'green'}></Box>
+      <AspectRatio ratio={1}>
+        <Box bgColor={'grey'}></Box>
       </AspectRatio>
-    </Stack>
+    </SimpleGrid>
   </>
 )
