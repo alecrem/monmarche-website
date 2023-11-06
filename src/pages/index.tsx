@@ -2,6 +2,7 @@ import { Text, Center, Heading, Stack, Image } from '@chakra-ui/react'
 
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
+import { PhotoGrid } from '../components/PhotoGrid'
 import { Footer } from '../components/Footer'
 import { ShopCard } from '../components/ShopCard'
 
@@ -39,9 +40,12 @@ const Index = () => (
         </Center>
       </Main>
     </Container>
-    <Container height={'100vh'}>
-      <Main mt={['-20vh', '-20vh', '-16vh']}>
-        <Center mt={20}>
+    <Container>
+      <PhotoGrid />
+    </Container>
+    <Container>
+      <Main mt={['10vh', '10vh', '8vh']}>
+        <Center>
           <Stack
             spacing={4}
             direction={['column', 'column', 'row']}
@@ -71,7 +75,7 @@ const Index = () => (
       </Main>
 
       <Footer>
-        <Text align={'center'}>
+        <Stack direction={'column'}>
           <Center>
             <Image
               src={'/monmarche-logo-2023.png'}
@@ -79,11 +83,15 @@ const Index = () => (
               maxW="160px"
             />
           </Center>
-          <br />
-          Copyright © 2018 - {new Date().getFullYear()} mon Marché
-          <br />
-          ヨーロッパの古道具屋さんと自然派ワイン
-        </Text>
+          <Center>
+            <Text align={'center'}>
+              <br />
+              Copyright © 2018 - {new Date().getFullYear()} mon Marché
+              <br />
+              ヨーロッパの古道具屋さんと自然派ワイン
+            </Text>
+          </Center>
+        </Stack>
       </Footer>
     </Container>
   </>
