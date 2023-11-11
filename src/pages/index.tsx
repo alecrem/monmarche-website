@@ -7,7 +7,7 @@ import { Footer } from '../components/Footer'
 import { ShopCard } from '../components/ShopCard'
 
 const mapIframeUrls = [
-  'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6663.268923921602!2d130.575274!3d33.380608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a1c1b254611b%3A0x76be69e99415fd75!2smon%20March%C3%A9!5e0!3m2!1sen!2sjp!4v1688461027721!5m2!1sen!2sjp',
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.842434671686!2d130.56679412801088!3d33.37862047341806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541a1c1b254611b%3A0x76be69e99415fd75!2smon%20March%C3%A9!5e0!3m2!1sja!2sjp!4v1699674177369!5m2!1sja!2sjp',
   'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6786.329189221611!2d131.083361!3d31.738707999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353f2659dbebffff%3A0x4b709954aeaa2bab!2sSLF!5e0!3m2!1sen!2sjp!4v1688461156562!5m2!1sen!2sjp',
 ]
 const Index = () => (
@@ -63,8 +63,8 @@ const Index = () => (
           >
             <ShopCard
               title={'mon Marché'}
-              address={'838-0124 福岡県小郡市古飯489-1'}
-              openingHours={'水曜日 11:00-16:00'}
+              address={'838-0124 福岡県小郡市古飯789-1'}
+              openingHours={'水・金曜日+たまの週末 11:00-16:00'}
               phone={'090-2078-7809'}
               email={'info@mmfukuoka.com'}
               instagram={'_monmarche'}
