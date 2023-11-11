@@ -1,5 +1,5 @@
 import { Text, Center, Heading, Stack, Image } from '@chakra-ui/react'
-
+import Head from 'next/head'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
 import { PhotoGrid } from '../components/PhotoGrid'
@@ -12,6 +12,15 @@ const mapIframeUrls = [
 ]
 const Index = () => (
   <>
+    <Head>
+      <title>mon Marché | ヨーロッパの古道具屋さんと自然派ワイン</title>
+      <meta
+        name="description"
+        content="フランスを主に、ヨーロッパの古道具を販売。 商品は、ヨーロッパに直接仕入れに行って、 ひとつひとつ選んでおります。 ぜひご覧ください。自然派ワインも置いております。 大切につくられたワインで素敵時間をお過ごしください… "
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <Container minW={'60%'}>
       <Main mt={'5vh'}>
         <Center>
