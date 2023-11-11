@@ -55,7 +55,7 @@ const Index = () => (
             <ShopCard
               title={'mon Marché'}
               address={'838-0124 福岡県小郡市古飯489-1'}
-              openingHours={'水曜日 11:00-16:00'}
+              openingHours={'水・金曜日+たまの週末 11:00-16:00'}
               phone={'090-2078-7809'}
               email={'info@mmfukuoka.com'}
               instagram={'_monmarche'}
