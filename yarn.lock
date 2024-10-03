@@ -51,11 +51,6 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@chakra-ui/anatomy@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.2.2.tgz#2d0e14cba2534d92077ca28abf8c183b6e27897b"
-  integrity sha512-MV6D4VLRIHr4PkW4zMyqfrNS1mPlCTiCXwvYGtDFQYr+xHFfonhAuf9WjsSc0nyp2m0OdkSLnzmVKkZFLo25Tg==
-
 "@chakra-ui/anatomy@2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.3.2.tgz#66c50d05847a81fed93f804fd0dfbc229b24cd47"
@@ -115,22 +110,13 @@
     "@chakra-ui/utils" "2.1.2"
     csstype "^3.1.2"
 
-"@chakra-ui/theme-tools@2.2.2":
+"@chakra-ui/theme-tools@2.2.2", "@chakra-ui/theme-tools@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.2.2.tgz#4a6bf459351d60598099d5494c5b5f1ece724b1d"
   integrity sha512-iK9xoIEnEO3mXSDUsnCNigFifgRU3K8fhuIrN+q20V7YxenrifqJ7wAbbALHxy7Awrfe3NOqdVca2lnsQ2L4Ig==
   dependencies:
     "@chakra-ui/anatomy" "2.3.2"
     "@chakra-ui/utils" "2.1.2"
-    color2k "^2.0.2"
-
-"@chakra-ui/theme-tools@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.1.2.tgz#913be05879cd816c546993ccb9ff7615f85ff69f"
-  integrity sha512-Qdj8ajF9kxY4gLrq7gA+Azp8CtFHGO9tWMN2wfF9aQNgG9AuMhPrUzMq9AMQ0MXiYcgNq/FD3eegB43nHVmXVA==
-  dependencies:
-    "@chakra-ui/anatomy" "2.2.2"
-    "@chakra-ui/shared-utils" "2.0.5"
     color2k "^2.0.2"
 
 "@chakra-ui/theme@3.4.2":
