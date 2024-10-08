@@ -51,11 +51,6 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@chakra-ui/anatomy@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.2.2.tgz#2d0e14cba2534d92077ca28abf8c183b6e27897b"
-  integrity sha512-MV6D4VLRIHr4PkW4zMyqfrNS1mPlCTiCXwvYGtDFQYr+xHFfonhAuf9WjsSc0nyp2m0OdkSLnzmVKkZFLo25Tg==
-
 "@chakra-ui/anatomy@2.3.4":
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-2.3.4.tgz#f671dae1dab5fa05e7184fc44521c58ce30a4182"
@@ -93,11 +88,6 @@
     react-lorem-component "^0.13.0"
     react-remove-scroll "^2.5.7"
 
-"@chakra-ui/shared-utils@2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/shared-utils/-/shared-utils-2.0.5.tgz#cb2b49705e113853647f1822142619570feba081"
-  integrity sha512-4/Wur0FqDov7Y0nCXl7HbHzCg4aq86h+SXdoUeuCMD3dSj7dpsVnStLYhng1vxvlbUnLpdF4oz5Myt3i/a7N3Q==
-
 "@chakra-ui/styled-system@2.11.1":
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/@chakra-ui/styled-system/-/styled-system-2.11.1.tgz#1ec8dea69b73f3185d860be8ae69c06669d65091"
@@ -106,22 +96,13 @@
     "@chakra-ui/utils" "2.2.1"
     csstype "^3.1.2"
 
-"@chakra-ui/theme-tools@2.2.5":
+"@chakra-ui/theme-tools@2.2.5", "@chakra-ui/theme-tools@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.2.5.tgz#8ca1429e0d6d7a4de544a5f32ab3dbcd62e60d19"
   integrity sha512-tUIv04Pzm2W8v5Iugei15qREIFX2mslI3fEouIVih8vHzwY821neCfspxOsAhvYSLNX+1kzk6ArBo9WzUpqn+Q==
   dependencies:
     "@chakra-ui/anatomy" "2.3.4"
     "@chakra-ui/utils" "2.2.1"
-    color2k "^2.0.2"
-
-"@chakra-ui/theme-tools@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-2.1.2.tgz#913be05879cd816c546993ccb9ff7615f85ff69f"
-  integrity sha512-Qdj8ajF9kxY4gLrq7gA+Azp8CtFHGO9tWMN2wfF9aQNgG9AuMhPrUzMq9AMQ0MXiYcgNq/FD3eegB43nHVmXVA==
-  dependencies:
-    "@chakra-ui/anatomy" "2.2.2"
-    "@chakra-ui/shared-utils" "2.0.5"
     color2k "^2.0.2"
 
 "@chakra-ui/theme@3.4.5":
