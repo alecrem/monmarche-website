@@ -13,18 +13,9 @@ export const system = createSystem(defaultConfig, {
   theme: {
     tokens: {
       colors: {
-        text: {
-          default: { value: '#16161D' },
-          _dark: { value: '#ade3b8' },
-        },
-        heroGradientStart: {
-          default: { value: '#7928CA' },
-          _dark: { value: '#e3a7f9' },
-        },
-        heroGradientEnd: {
-          default: { value: '#FF0080' },
-          _dark: { value: '#fbec8f' },
-        },
+        text: { value: '#16161D' },
+        heroGradientStart: { value: '#7928CA' },
+        heroGradientEnd: { value: '#FF0080' },
         black: { value: '#16161D' },
       },
       radii: {
