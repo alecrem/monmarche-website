@@ -6,7 +6,7 @@ export const PhotoGrid = (props: StackProps) => (
       minW={['100%', '80%', '70%']}
       columns={[null, 2, 2]}
       px={[0, 4]}
-      spacing={4}
+      gap={4}
     >
       <AspectRatio ratio={1}>
         <Image src={'/monmarche-1.jpg'} alt={'mon Marché 店舗 商品 1'} />

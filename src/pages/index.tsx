@@ -36,7 +36,7 @@ const Index = () => (
           <Text
             fontWeight={'black'}
             fontSize={'lg'}
-            align={'center'}
+            textAlign={'center'}
             maxWidth={'32rem'}
             pb={'3em'}
           >
@@ -56,7 +56,7 @@ const Index = () => (
       <Main mt={['10vh', '10vh', '8vh']}>
         <Center>
           <Stack
-            spacing={4}
+            gap={4}
             direction={['column', 'column', 'row']}
             display={'flex'}
             alignItems={'flex-start'}
@@ -93,7 +93,7 @@ const Index = () => (
             />
           </Center>
           <Center>
-            <Text align={'center'}>
+            <Text textAlign={'center'}>
               <br />
               Copyright © 2018 - {new Date().getFullYear()} mon Marché
               <br />
